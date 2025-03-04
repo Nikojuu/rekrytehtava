@@ -34,6 +34,7 @@ npx prisma studio
 - **SQLite** - kevyt tietokanta
 - **Prisma ORM** - tietokannan hallintaan
 - **Tailwind CSS** - tyylittelyyn
+- **Käytetty aika** - 4 + 4 tuntia
 
 ## Miten harjoitus eteni
 
