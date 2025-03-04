@@ -45,7 +45,8 @@ npx prisma studio
 - Sen jälkeen kun tehtävä oli valmis halusin tutustua Nuxtiin hieman enemmän kun vasta oli riippuvuudet asennettu ja tehtävän palautukselle oli annettu reilusti aikaa.
 
 ## Overtime
+- Overtime on täysin eristyksissä alkuperäisestä tehtävälistasta uudella sivulla ja omalla tietokanta tablella
 
 - Nyt kun Nuxt kehitysympäristö on asennettu ja tutustuttu, päätin käyttää toiset 4 tuntia jatkokehittääkseni Tehtävälistaa jossa yritin yhdistää kaikki 3 annettua tehtävää
 
--Lisähaasteena tein ensiksi endpointin joka generoi 50 random tehtävää. Tehtävät on listattu 10kpl / sivu(url paginaatio) , Tehtävät voi järjestää ajan luonti ajankohdan mukaan, voit myös etsiä tehtävää otsikon mukaan
+- Lisähaasteena tein ensiksi endpointin joka generoi 50 random tehtävää. Tehtävät on listattu 10kpl / sivu(url paginaatio) , Tehtävät voi järjestää ajan luonti ajankohdan mukaan, voit myös etsiä tehtävää otsikon mukaan
