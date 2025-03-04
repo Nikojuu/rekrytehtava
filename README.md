@@ -1,75 +1,51 @@
-# Nuxt Minimal Starter
+# Tehtävälista-sovellus
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Yksinkertainen tehtävälista-sovellus päivittäisten tehtäviesi hallintaan.
 
-## Setup
+### Asennus (tietokanta on valmiiksi liitetty)
 
-Make sure to install dependencies:
+1. Kloonaa tämä repositorio
+2. Asenna riippuvuudet:
 
-```bash
-# npm
-npm install
+```
+npm i
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+### Sovelluksen käynnistäminen
 
-Start the development server on `http://localhost:3000`:
+Käynnistä kehityspalvelin:
 
-```bash
-# npm
+```
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+### Tietokannan katselu (valinnainen)
 
-Build the application for production:
+toisessa terminaalissa:
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```
+npx prisma studio
 ```
 
-Locally preview production build:
+## Käytetyt teknologiat
 
-```bash
-# npm
-npm run preview
+- **Nuxt.js** - frontend + backend
+- **SQLite** - kevyt tietokanta
+- **Prisma ORM** - tietokannan hallintaan
+- **Tailwind CSS** - tyylittelyyn
 
-# pnpm
-pnpm preview
+## Miten harjoitus eteni
 
-# yarn
-yarn preview
+- Aluksi mietin minkä vaihtoehdon teen ja millä teknologialla.Tehtävälistojen teko Reactilla ja JavaScriptillä oli jo entuudestaan tuttua, joten päädyin tekemään tehtävälistan Nuxt:ia käyttämällä. Koska en ollut koskaan käyttänyt tätä, halusin mielenkiinnosta tutustua siihen.
+- Ensimmäiset 2 tuntia meni asentaessa ja tutkiessa miten riippuvuudet yhdistetään Nuxt projektiin. Valitsin riippuvuuksiksi: SQL-liten jotta ei tarvitse tehdä erillista tietokanta konfiguraatiota , Prisma ORM jolla pystyn näkemään mitä tietokannassa tapahtuu ja nopeuttaakseen hakuja. Tailwind css nopeaan tyylittelyyn.
 
-# bun
-bun run preview
-```
+- Tämän jälkeen pääsin työstämään itse Tehtävälista applikaatiota. Tehtävälista oli melko helppo tehdä Nuxtilla, koska CRUD toiminnot ovat jo tuttuja. Nuxt documentaation kanssa sain tämän kivuttomasti tehtyä ja ~4 tuntia oli kulunut tehtävän aloituksen jälkeen.
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Sen jälkeen kun tehtävä oli valmis halusin tutustua Nuxtiin hieman enemmän kun vasta oli riippuvuudet asennettu ja tehtävän palautukselle oli annettu reilusti aikaa.
+
+## Overtime
+
+- Nyt kun Nuxt kehitysympäristö on asennettu ja tutustuttu, päätin käyttää toiset 4 tuntia jatkokehittääkseni Tehtävälistaa jossa yritin yhdistää kaikki 3 annettua tehtävää
+
+-Lisähaasteena tein ensiksi endpointin joka generoi 50 random tehtävää. Tehtävät on listattu 10kpl / sivu(url paginaatio) , Tehtävät voi järjestää ajan luonti ajankohdan mukaan, voit myös etsiä tehtävää otsikon mukaan
